@@ -1,25 +1,24 @@
 {
   "name": "telegram-mail-platform",
   "version": "1.0.0",
+  "private": true,
   "description": "Telegram Mail Platform",
-  "main": "dist/index.js",
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js"
   },
   "dependencies": {
-    "@telegraf/session": "^2.0.0-beta.7",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "telegraf": "^4.16.3",
+    "sqlite3": "^5.1.7",
     "googleapis": "^144.0.0",
+    "nodemailer": "^6.10.0",
     "helmet": "^8.0.0",
     "multer": "^1.4.5-lts.1",
-    "nodemailer": "^6.10.0",
-    "pino": "^9.5.0",
-    "sqlite3": "^5.1.7",
-    "telegraf": "^4.16.3",
-    "uuid": "^11.0.5"
+    "uuid": "^11.1.0",
+    "pino": "^9.5.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
